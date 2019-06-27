@@ -57,7 +57,7 @@ rgb_lcd::rgb_lcd()
 {
 }
 
-void rgb_lcd::begin(uint8_t cols, uint8_t lines, uint8_t dotsize, int sdaPin=-1, int sclPin=-1, uint32_t frequency=0U) 
+void rgb_lcd::begin(uint8_t cols, uint8_t lines, int sdaPin, int sclPin, uint32_t frequency, uint8_t dotsize)
 {
 
     Wire.begin(sdaPin, sclPin, frequency);
